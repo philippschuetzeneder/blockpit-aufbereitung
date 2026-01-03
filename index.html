@@ -84,9 +84,7 @@
 <header>
   <h1>Blockpit-Projekte effizient aufbereiten</h1>
   <p>Krypto-Steuerdaten sauber vorbereiten – <span class="highlight">ohne hohe Steuerberater-Stundensätze</span></p>
-  <p style="margin-top:1rem;font-size:0.95rem;">
-    Philipp Schützeneder · Freelancer (AT)
-  </p>
+  <p style="margin-top:1rem;font-size:0.95rem;">Philipp Schützeneder · Freelancer (AT)</p>
 </header>
 
 <section>
@@ -125,9 +123,7 @@
       <span class="highlight">deutlich geringeren Stundensatz</span> –
       effizient, transparent und ohne unnötige Bürokratie.
     </p>
-    <p>
-      <strong>Stundensatz:</strong> 120 € / Stunde (exkl. USt)
-    </p>
+    <p><strong>Stundensatz:</strong> 120 € / Stunde (exkl. USt)</p>
   </div>
 
   <div class="card">
@@ -177,10 +173,7 @@
 
   <div class="card">
     <h2>Kontakt</h2>
-    <p>
-      Beschreibe kurz dein Blockpit-Projekt. Ich melde mich mit einer
-      realistischen Einschätzung.
-    </p>
+    <p>Beschreibe kurz dein Blockpit-Projekt. Ich melde mich mit einer realistischen Einschätzung.</p>
 
     <form onsubmit="sendMail(); return false;">
       <input type="text" id="name" placeholder="Dein Name" required />
@@ -189,9 +182,7 @@
       <button type="submit">Unverbindlich anfragen</button>
     </form>
 
-    <p style="font-size:0.9rem;color:#666;margin-top:1rem;">
-      Hinweis: Beim Absenden öffnet sich dein E-Mail-Programm.
-    </p>
+    <p style="font-size:0.9rem;color:#666;margin-top:1rem;">Hinweis: Beim Absenden öffnet sich dein E-Mail-Programm.</p>
   </div>
 
   <div class="card">
@@ -212,19 +203,16 @@
 
 </section>
 
-<footer>
-  © 2025 · Freelancer Blockpit-Projektaufbereitung · Österreich
-</footer>
+<footer>© 2025 · Freelancer Blockpit-Projektaufbereitung · Österreich</footer>
 
 <script>
   function sendMail() {
     const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    const subject = encodeURIComponent("Blockpit-Anfrage von " + name);
+    const subject = encodeURIComponent("Blockpit-Anfrage");
     const body = encodeURIComponent(
-      message + "\n\n—\nAbsender: " + name + "\nE-Mail: " + email
+      message + "\n\nFreundliche Grüße,\n" + name
     );
 
     window.location.href =
