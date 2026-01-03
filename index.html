@@ -210,7 +210,8 @@
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
 
-    const subject = encodeURIComponent("Blockpit-Anfrage");
+    // Betreff enthält jetzt den eingegebenen Namen
+    const subject = encodeURIComponent("Blockpit Anfrage von " + name);
     const body = encodeURIComponent(message + "\n\nFreundliche Grüße,\n" + name);
 
     window.location.href = "mailto:p.schuetzeneder@gmail.com?subject=" + subject + "&body=" + body;
