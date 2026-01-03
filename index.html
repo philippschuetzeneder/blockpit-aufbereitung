@@ -211,12 +211,9 @@
     const message = document.getElementById("message").value;
 
     const subject = encodeURIComponent("Blockpit-Anfrage");
-    const body = encodeURIComponent(
-      message + "\n\nFreundliche Grüße,\n" + name
-    );
+    const body = encodeURIComponent(message + "\n\nFreundliche Grüße,\n" + name);
 
-    window.location.href =
-      "mailto:p.schuetzeneder@gmail.com?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:p.schuetzeneder@gmail.com?subject=" + subject + "&body=" + body;
   }
 </script>
 
